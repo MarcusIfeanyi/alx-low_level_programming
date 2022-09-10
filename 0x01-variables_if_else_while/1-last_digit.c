@@ -18,7 +18,7 @@ int main(void)
 	}
 	else if (n % 10 == 0)
 	{
-		printf("Last digit of %i is %i is 0\n", n, n % 10);
+		printf("Last digit of %i is %i and is 0\n", n, n % 10);
 	}
 	else
 	{
