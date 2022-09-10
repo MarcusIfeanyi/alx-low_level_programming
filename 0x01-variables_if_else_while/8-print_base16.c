@@ -8,13 +8,12 @@
  */
 int main(void)
 {
-	int num;
+	char base16;
 
-	for (num = 48; num <= 57; num++)
+	for (base16 = 48; base16 <= 57; base16++)
 	{
-		putchar(num);
+		putchar(base16);
 	}
 	putchar('\n');
-
 	return (0);
 }
