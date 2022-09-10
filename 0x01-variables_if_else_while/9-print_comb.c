@@ -8,16 +8,20 @@
  */
 int main(void)
 {
-	char base16;
+	int num;
 
-	for (base16 = 48; base16 <= 57; base16++)
+	for (num = 48; num <= 57; num++)
 	{
-		putchar(base16);
-	}
-	for (base16 = 97; base16 <= 102; base16++)
-	{
-		putchar(base16);
+		putchar(num);
+
+		if (num == 57)
+		{
+			break;
+		}
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
+
 	return (0);
 }
