@@ -8,13 +8,12 @@
  */
 int main(void)
 {
-	int num;
+	char lower_ASCII;
 
-	for (num = 48; num < 57; num++)
+	for (lower_ASCII = 122; lower_ASCII >= 97; lower_ASCII--)
 	{
-		putchar(num);
+		putchar(lower_ASCII);
 	}
 	putchar('\n');
-
 	return (0);
 }
