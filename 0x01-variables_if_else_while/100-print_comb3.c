@@ -17,22 +17,11 @@ int main(void)
 		for (num2 = 49; num2 <= 57; num2++)
 		{
 			putchar(num1);
-
-			if (num2 == 57 && num1 == 56)
-			{
-				putchar(num2);
-				break;
-			}
-			else
-			{
-				putchar(num2);
-				putchar(44);
-				putchar(32);
-			}
+			putchar(num2);
+			putchar(44);
+			putchar(32);
 		}
-
 	}
 	putchar('\n');
-
 	return (0);
 }
