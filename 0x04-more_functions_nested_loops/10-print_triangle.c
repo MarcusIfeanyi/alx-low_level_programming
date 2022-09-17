@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_triangle - Print triangle dependent on the parameter size.
- * @size : The height of the triangle
+ * print_triangle - Print triangle sizeof the argument
+ * @size : The height of the triangle to be printed
  * Return: Void.
  */
 void print_triangle(int size)
@@ -11,15 +11,14 @@ void print_triangle(int size)
 	int f;
 	int s;
 	int spaces;
-
+;
 	for (f = 0; f < size; f++)
 	{
-		while (spaces < size - 1)
+		for (spaces = size - 1 - f; spaces > 0; spaces--)
 		{
 			_putchar(' ');
-			spaces++;
 		}
-		for (s = 0; s <= i; s++)
+		for (s = 0; s <= f; s++)
 		{
 			_putchar('#');
 		}
