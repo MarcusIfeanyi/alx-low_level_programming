@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_square - Print square line dependent on the integer n.
- * @n : The number of lines using '#' characters to use per row and column
+ * print_square - Print square line with number equal to the argument
+ * @n : The number of lines using '#' shows the wall of the square
  * Return: Void.
  */
 void print_square(int n)
 {
-	int x;
-	int y;
+	int u;
+	int v;
 
 	for (u = 0; u < n; u++)
 	{
