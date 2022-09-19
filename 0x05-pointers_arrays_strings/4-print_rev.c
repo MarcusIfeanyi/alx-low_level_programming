@@ -20,7 +20,7 @@ void print_rev(char *s)
 	}
 		int num;
 
-	for (num = number_of_string - 1; num <= 0; num--)
+	for (num = number_of_string - 1; num >= 0; num--)
 	{
 		_putchar(s[num]);
 	}
