@@ -7,22 +7,18 @@
  * Return: void
  * done by Marcus Ifeanyi
  */
-
 void print_rev(char *s)
 {
-	int number_of_string;
+	int num = 0;
 
-	number_of_string = 0;
-
-	while (s[number_of_string])
+	while (s[num])
 	{
-		number_of_string += 1;
+		num++;
 	}
-		int num;
-
-	for (num = number_of_string - 1; num >= 0; num--)
+	while (num--)
 	{
 		_putchar(s[num]);
 	}
 	_putchar('\n');
+
 }
