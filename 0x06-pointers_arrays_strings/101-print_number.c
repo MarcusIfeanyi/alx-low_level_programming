@@ -1,34 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer.
- * @n: integer
- * Return: void
+ * base10 - power in 10 base
+ * @n: an exponent
+ * Return: returns 10 to power exponent
  */
-
-void print_number(int n)
-{
-int divisor = 1, i, resp;
-
-if (n < 0)
-{
-	_putchar('-');
-	n *= -1;
-}
-
-for (i = 0; n / divisor > 9; i++, divisor *= 10)
-;
-
-for (; divisor >= 1; n %= divisor, divisor /= 10)
-{
-	resp = n / divisor;
-	_putchar('0' + resp);
-
-}
-
-}
-/*
- * int base10(int n)
+int base10(int n)
 {
 	int base = 10;
 
@@ -40,11 +17,11 @@ for (; divisor >= 1; n %= divisor, divisor /= 10)
 	return (base);
 }
 
-**
+/**
  * print_number - prints integers enters as parameters using putchar
  * @n: integer to print
  * Return: void
- *
+ */
 void print_number(int n)
 {
 	int power;
@@ -73,4 +50,3 @@ void print_number(int n)
 		}
 	}
 }
-*/
