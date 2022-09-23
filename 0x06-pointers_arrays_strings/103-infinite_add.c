@@ -1,65 +1,27 @@
 #include "main.h"
 
 /**
- * infinite_add - add 2 integers.
- * @n1: integer
- * @n2: integer
- * @r: buffer
- * size_r: size of r
- * Return: char
+ * rot13 - encodes a string in rot13
+ * @s: string to be encoded
+ * Return: the resulting strring
  */
-
-int _atoi(char *s)
+char *rot13(char *s)
 {
-	int sign = 1, resp = 0, firstNum;
+	int i, j;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[firstNum] == '-')
+		for (j = 0; a[j] != '\0'; j++)
 		{
-			sign *= -1;
-		}
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+				break;
+			}
+	    }
 	}
-
-	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
-	{
-		resp *= 10;
-		resp += (s[i] - 48);
-	}
-
-	return (sign * resp);
-}
-
-void int_to_string(int n)
-{
-int divisor = 1, i, resp;
-
-
-for (i = 0; n / divisor > 9; i++)
-{
-	divisor *= 10;
-}
-
-char str[i];
-
-for (int cmpt = 0; divisor >= 10; divisor /= 10, cmpt++)
-{
-	resp = n / divisor;
-	str[cmpt] = '0' + resp;
-	n = n - resp * divisor;
-}
-str[i] = ('0' + n);
-
-}
-
-
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
-{
-    int sum, a, b;
-    a = _atoi(n1);
-    b = _atoi(n2);
-
-    sum = a + b;
-
-
+	return (s);
 }
