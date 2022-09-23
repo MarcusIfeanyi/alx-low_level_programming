@@ -7,21 +7,29 @@
  */
 char *rot13(char *s)
 {
-	int i = 0;
+	int var1 = 0, var2;
 
-	while (s[i] != '\0')
+	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+				'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+				'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
+				'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+				'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+				'y', 'z'};
+	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+				'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F',
+				'G', 'H', 'I', 'J', 'K', 'L', 'M', 'n', 'o',
+				'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+				'y', 'z'};
+	while (s[var1]0)
 	{
-		while ((s[i] >= 'a' && s[i] <= 'z') ||
-				(s[i] >= 'A' && s[i] <= 'Z'))
+		for (var2 = 0; var2 < 52; var2++)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'm') ||
-					(s[i] >= 'A' && s[i] <= 'M'))
-				s[i] += 13;
-			else
-				s[i] -= 13;
-			i++;
+			if (str[var1] == alphabet[var2])
+			{
+				s[var1] = rot13key[var2];
+			}
 		}
-		i++;
+		var1++;
 	}
 	return (s);
 }
