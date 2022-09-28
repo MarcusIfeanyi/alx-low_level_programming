@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 /**
  * is_prime_number - check if n is a prime number
@@ -19,13 +19,13 @@ return (check_prime(n, 2));
  * Return: int
  */
 
-int check_prime(int n, int value)
+int check_prime(int n, int resp)
 {
 
-if (value == n && n > 1)
+if (resp >= n && n > 1)
 	return (1);
-else if (n % value == 0 || n <= 1)
+else if (n % resp == 0 || n <= 1)
 	return (0);
 else
-	return (check_prime(n, value + 1));
+	return (check_prime(n, resp + 1));
 }
