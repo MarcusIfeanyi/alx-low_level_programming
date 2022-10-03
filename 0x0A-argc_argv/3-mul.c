@@ -5,7 +5,7 @@
  * main - Entry perform and action and return an int
  * @argc: Number of command line arguments
  * @argv: Array String name
- * Return: 0 on success
+ * Return: 1 on success
  */
 
 int main(int argc, char *argv[])
@@ -14,9 +14,12 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		num = (atoi(argv[1])) + (atoi(argv[2]));
+		num = (atoi(argv[1])) * (atoi(argv[2]));
 		printf("%i\n", num);
 	}
 	else
-	printf("Error\n");
+	{
+		printf("Error\n");
+	}
+	return (1);
 }
