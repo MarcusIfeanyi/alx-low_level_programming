@@ -7,14 +7,9 @@
  * Return: 0 on success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	(void) argv;
-	int slight_change;
-
-	slight_change = argc - 1;
-
-	printf("%i\n", slight_change);
-	return (0);
+(void)argv;
+printf("%i\n", argc - 1);
+return (0);
 }
-
