@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	(void) argv;
 	int slight_change;
 
-	slight_change = argc -1;
+	slight_change = argc - 1;
 
 	printf("%i\n", slight_change);
 	return (0);
