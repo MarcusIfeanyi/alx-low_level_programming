@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		num = (atoi(argv[1])) * (atoi(argv[2]));
 		printf("%i\n", num);
-		return(0);
+		return (0);
 	}
 	else
 	{
