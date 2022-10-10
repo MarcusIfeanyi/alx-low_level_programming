@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdlib.h>
 /**
  * struct dog - The structure data structure.
  * @name: name of the object or structure(dog)
