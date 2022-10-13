@@ -1,1 +1,1 @@
-This Repository Is Used To Solve Tasks On Function Pointers (0x0F-function_pointers)
+This Repository Is Used to ALX Software Enginnering Tasks: Programming in C language
