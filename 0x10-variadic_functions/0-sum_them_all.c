@@ -6,7 +6,7 @@
 * sum_them_all - The fxn sums of all its parameters
 * @n: n argument
 * @...: Accepts a Variable No. of arguments
-* 	hence a variadic Function
+*	hence a variadic Function
 * Return: sum or if n == 0, return 0
 */
 int sum_them_all(const unsigned int n, ...)
